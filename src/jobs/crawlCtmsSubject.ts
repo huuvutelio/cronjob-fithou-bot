@@ -73,6 +73,6 @@ const task = new Task('simple task', async () => {
   console.log('crawlCtmsSubject running 2');
 });
 
-const job = new SimpleIntervalJob({ seconds: 60 * 60, runImmediately: true }, task);
+const job = new SimpleIntervalJob({ seconds: 30 * 60, runImmediately: true }, task);
 
 export default job;
